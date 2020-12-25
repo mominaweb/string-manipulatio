@@ -1,0 +1,31 @@
+Sub Main()
+        Dim count, donutcount As Integer
+        Dim str As String = "many"
+        count = 0
+        donutcount = 0
+        str = "many"
+        Console.WriteLine("enter number of donuts: ")
+        count = Console.ReadLine
+
+        Next
+
+        If donutcount > 0 And donutcount < 10 Then
+            donutcount = count
+        ElseIf donutcount >= 10 Then
+            donutcount = str
+
+
+
+        End If
+
+        If donutcount >= 10 Then
+            Console.WriteLine("number of donut : many" & donutcount)
+        Else
+            Console.WriteLine("number of donut:" & count)
+            Console.ReadKey()
+
+
+
+        End If
+
+    End Sub
