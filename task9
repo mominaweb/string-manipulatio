@@ -1,0 +1,54 @@
+Module Module1
+
+
+    Sub Main()
+        Dim a, b, X, Y, Q, R, lenA, lenB, i As String
+        a = ""
+        b = ""
+        X = ""
+        Y = ""
+        R = ""
+        lenA = ""
+        lenB = ""
+        i = ""
+
+        Console.WriteLine("enter a :")
+        a = Console.ReadLine()
+        Console.WriteLine(" enter b:")
+        b = Console.ReadLine()
+        lenA = Len(a) - 2
+        lenB = Len(b) - 2
+        X = Mid(a, 2, 1)
+        Y = Mid(b, 2, 1)
+        Q = Mid(a, lenA, 3)
+        R = Mid(b, lenB, 3)
+        i = 'Y' & 'Q' & '' & 'X' 'R'
+
+        Console.WriteLine("result:" & i)
+        Console.ReadKey()
+
+
+
+
+
+
+
+
+
+
+
+
+    End Sub
+
+End Module
+
+
+
+
+
+
+
+
+
+
+   
