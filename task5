@@ -1,0 +1,33 @@
+Sub Main()
+        
+        Dim Str1, Str2 As String
+        Dim Count, N, vowelCount As Integer
+        Dim Char1 As Char
+
+       
+        Str1 = ""
+        Str2 = "AEIOU"
+        Count = 0
+        Char1 = ""
+       
+
+        
+        Console.Write("Please enter string: ")
+        Str1 = Console.ReadLine()
+
+        
+        
+        For Count = 1 To Len(myStr1)
+            Char1 = Mid(Str1, Count, 1)
+            Char1 = UCase(Char1)
+            N = InStr(myStr2, myChar1) 
+            If N > 0 Then
+                vowelCount = vowelCount + 1
+            End If
+        Next
+
+        
+        Console.WriteLine("Number of vowels in string is: " & vowelCount)
+
+        Console.ReadKey()
+    End Sub
