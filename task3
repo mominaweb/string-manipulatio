@@ -1,0 +1,46 @@
+Module
+
+    Sub Main()
+        Dim mystr1, mystr2 As String
+        Dim Mychar1, mychar As Char
+        Dim c, N, digitcount, alphacount, othercharactercount As Integer
+        mystr1 = ""
+        mystr2 = ""
+        N = 0
+        c = 0
+        digitcount = 0
+        alphacount = 0
+        othercharactercount = 0
+        Mychar1 = ""
+        mychar2 = ""
+        Console.WriteLine("enter your string:")
+        mystr1 = Console.ReadLine()
+        For c = 1 To Len(mystr1)
+            Mychar1 = Mid(mystr1, c, 1)
+            mychar2 = Mid(mystr1, count, 1)
+            N = InStr(mystr2, Mychar1)
+            If Mychar1 >= "a" And Mychar1 <= "z" Then
+                alphacount = alphacount + 1
+            ElseIf Mychar1 >= "0" And Mychar1 <= "9" Then
+                digitcount = digitcount + 1
+            ElseIf Mychar1 = InStr(mystr1, Len(mystr1) - alphacount) And InStr(mystr1, Len(mystr1) - digitcount) Then
+
+
+                othercharactercount = othercharactercount + 1
+            End If
+        Next
+        Console.WriteLine("digitcount in string:" & digitcount)
+        Console.WriteLine("alphacount in string:" & alphacount)
+        Console.WriteLine("othercharactercount in string:" & othercharactercount)
+        Console.ReadKey()
+
+    End Sub
+End Module
+
+
+
+
+
+
+
+
