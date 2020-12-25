@@ -1,0 +1,52 @@
+Module Module1
+
+
+    Sub Main()
+
+        Dim str1, str2 As String
+        Dim char1 As Char
+        Dim count, i As Integer
+        Dim ispangram As Boolean
+        str1 = ""
+        str2 = "abcdefghijklmnopqrstuvwxyz"
+        char1 = ""
+        count = 0
+        i = 0
+        ispangram = True
+        Console.WriteLine("enter your string:")
+        str1 = Console.ReadLine()
+        For count = 1 To Len(str2)
+            char1 = Mid(str2, count, 1)
+            i = InStr(str1, char1)
+            If i = 0 Then
+                ispangram = False
+
+
+            End If
+        Next
+        If ispangram = True Then
+            Console.WriteLine("it is a pangram")
+        Else
+            Console.WriteLine("it is not a pangram")
+
+
+        End If
+
+
+
+        Console.ReadKey()
+
+    End Sub
+End Module
+
+
+
+
+
+
+
+
+
+
+
+
